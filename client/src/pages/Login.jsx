@@ -10,7 +10,7 @@ export default function Login(){
   const submit = async (e) => {
     e.preventDefault()
     try {
-      const res = await api.post('/auth/login', { email, password })
+      const res = await api.post('/api/auth/login', { email, password })
       setToken(res.data.token)
       nav('/')
     } catch (e) { alert(e.response?.data?.message || e.message) }
