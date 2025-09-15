@@ -1,5 +1,5 @@
 import axios from 'axios'
-const API = 'https://mern-fooddelivery-app-1.onrender.com/api';
+const API = 'https://mern-fooddeliveryapp-server.onrender.com/api';
 
 export const api = axios.create({ baseURL: API })
 
